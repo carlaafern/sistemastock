@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEB07A52-B41C-418C-8FFC-72E0F0F226FD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Centro_Salud</RootNamespace>
+    <AssemblyName>Centro_Salud</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\AjaxControlToolkit.Binary.NET40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\..\..\Npgsql.Provider\Npgsql-2.0.11.91\bin\Debug4\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\..\..\..\Npgsql.Provider\Npgsql-2.0.11.91\bin\Debug4\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Imagenes\especialidad.png" />
+    <Content Include="Imagenes\iconoOk.png" />
+    <Content Include="Imagenes\logo1.jpg" />
+    <Content Include="Imagenes\logo3.png" />
+    <Content Include="Imagenes\usuario.png" />
+    <Content Include="Presentacion\AbmEnfermedad\EditarEnfermedad.aspx" />
+    <Content Include="Presentacion\AbmEnfermedad\Enfermedades.aspx" />
+    <Content Include="Presentacion\AbmEspecialidad\EditarEspecialidad.aspx" />
+    <Content Include="Presentacion\AbmMedicamentos\AbmMedicamento.aspx" />
+    <Content Include="Presentacion\AbmMedicamentos\ConsultarMedicamentos.aspx" />
+    <Content Include="Presentacion\AbmMedicamentos\EditarMedicamento.aspx" />
+    <Content Include="Presentacion\AbmUsuario\AbmPerfil.aspx" />
+    <Content Include="Presentacion\AbmUsuario\AltaPersona.aspx" />
+    <Content Include="Presentacion\AbmUsuario\ConsultaUsuarios.aspx" />
+    <Content Include="Presentacion\AcercaDe.aspx" />
+    <Content Include="Presentacion\Alertas\Mails\mail.htm" />
+    <Content Include="Presentacion\Alertas\ProbarAlertas.aspx" />
+    <Content Include="Presentacion\Consultas.aspx" />
+    <Content Include="Presentacion\AbmEspecialidad\Especialidades.aspx" />
+    <Content Include="Presentacion\Informes\ReporteMovim.aspx" />
+    <Content Include="Presentacion\Informes\ReporteMovimientos.aspx" />
+    <Content Include="Presentacion\Informes\ReporteEspecialidad.aspx" />
+    <Content Include="Presentacion\Informes\ReporteMedicamento.aspx" />
+    <Content Include="Presentacion\Informes\ReporteUsuarios.aspx" />
+    <Content Include="Presentacion\Informes\ReporteVencimientos.aspx" />
+    <Content Include="Presentacion\Inicio.aspx" />
+    <Content Include="Presentacion\AbmUsuario\RegistroUsuario.aspx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Presentacion\AbmUsuario\Usuarios.aspx" />
+    <Content Include="Presentacion\Login.aspx" />
+    <Content Include="Presentacion\Movimientos\ABMLotes.aspx" />
+    <Content Include="Presentacion\Movimientos\ABMTipoMovimiento.aspx" />
+    <Content Include="Presentacion\Movimientos\Vencimientos.aspx" />
+    <Content Include="Presentacion\Movimientos\ConsultarMovimientos.aspx" />
+    <Content Include="Presentacion\Movimientos\PedidoStk.aspx" />
+    <Content Include="Presentacion\Movimientos\Salidas.aspx" />
+    <Content Include="Presentacion\Movimientos\Entradas.aspx" />
+    <Content Include="Presentacion\ParametrosSistema\ConfigurarStockM.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\DSMovimientos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMovimientos.xsd</DependentUpon>
+    </Content>
+    <Compile Include="CentroSaludDatos.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CentroSaludDatos.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="centro_saludDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>centro_saludDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="centro_saludDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>centro_saludDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMovimientos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMovimientos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\Comprobante.cs" />
+    <Compile Include="Persistencia\IDetallePedido.cs" />
+    <Compile Include="Persistencia\IPedido.cs" />
+    <Compile Include="Persistencia\IStockMedicamento.cs" />
+    <Compile Include="Persistencia\IDtoEntrada.cs" />
+    <Compile Include="Persistencia\Encripta.cs" />
+    <Compile Include="Persistencia\ITipoMovimiento.cs" />
+    <Compile Include="Persistencia\DetalleComprobante.cs" />
+    <Compile Include="Persistencia\DetalleDonacion.cs" />
+    <Compile Include="Persistencia\DetalleMovimiento.cs" />
+    <Compile Include="Persistencia\DetalleReceta.cs" />
+    <Compile Include="Persistencia\Donacion.cs" />
+    <Compile Include="Persistencia\IDepartamento.cs" />
+    <Compile Include="Persistencia\IDetalleMovimiento.cs" />
+    <Compile Include="Persistencia\IDireccion.cs" />
+    <Compile Include="Persistencia\IEnfermedad.cs" />
+    <Compile Include="Persistencia\IEspecialidad.cs" />
+    <Compile Include="Persistencia\IFormato.cs" />
+    <Compile Include="Persistencia\ILocalidad.cs" />
+    <Compile Include="Persistencia\ILote.cs" />
+    <Compile Include="Persistencia\IMedicamento.cs" />
+    <Compile Include="Persistencia\IMovimientoStock.cs" />
+    <Compile Include="Persistencia\Intermediario.cs" />
+    <Compile Include="Persistencia\IPerfil.cs" />
+    <Compile Include="Persistencia\IPersona.cs" />
+    <Compile Include="Persistencia\IProvincia.cs" />
+    <Compile Include="Persistencia\ITIpoPersona.cs" />
+    <Compile Include="Persistencia\IUnidadMedida.cs" />
+    <Compile Include="Persistencia\Medicamento.cs" />
+    <Compile Include="Persistencia\Medico.cs" />
+    <Compile Include="Persistencia\MovimientoStock.cs" />
+    <Compile Include="Persistencia\Paciente.cs" />
+    <Compile Include="Persistencia\Perfil.cs" />
+    <Compile Include="Persistencia\PerfilPrivilegio.cs" />
+    <Compile Include="Persistencia\Privilegio.cs" />
+    <Compile Include="Persistencia\Receta.cs" />
+    <Compile Include="Persistencia\TipoComprobante.cs" />
+    <Compile Include="Persistencia\TipoMedicamento.cs" />
+    <Compile Include="Persistencia\TipoMovimiento.cs" />
+    <Compile Include="Persistencia\IUsuario.cs" />
+    <Compile Include="Presentacion\AbmEnfermedad\EditarEnfermedad.aspx.cs">
+      <DependentUpon>EditarEnfermedad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmEnfermedad\EditarEnfermedad.aspx.designer.cs">
+      <DependentUpon>EditarEnfermedad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmEnfermedad\Enfermedades.aspx.cs">
+      <DependentUpon>Enfermedades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmEnfermedad\Enfermedades.aspx.designer.cs">
+      <DependentUpon>Enfermedades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmEspecialidad\EditarEspecialidad.aspx.cs">
+      <DependentUpon>EditarEspecialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmEspecialidad\EditarEspecialidad.aspx.designer.cs">
+      <DependentUpon>EditarEspecialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmMedicamentos\AbmMedicamento.aspx.cs">
+      <DependentUpon>AbmMedicamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmMedicamentos\AbmMedicamento.aspx.designer.cs">
+      <DependentUpon>AbmMedicamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmMedicamentos\ConsultarMedicamentos.aspx.cs">
+      <DependentUpon>ConsultarMedicamentos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmMedicamentos\ConsultarMedicamentos.aspx.designer.cs">
+      <DependentUpon>ConsultarMedicamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmMedicamentos\EditarMedicamento.aspx.cs">
+      <DependentUpon>EditarMedicamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmMedicamentos\EditarMedicamento.aspx.designer.cs">
+      <DependentUpon>EditarMedicamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\AbmPerfil.aspx.cs">
+      <DependentUpon>AbmPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\AbmPerfil.aspx.designer.cs">
+      <DependentUpon>AbmPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\AltaPersona.aspx.cs">
+      <DependentUpon>AltaPersona.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\AltaPersona.aspx.designer.cs">
+      <DependentUpon>AltaPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\ConsultaUsuarios.aspx.cs">
+      <DependentUpon>ConsultaUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\ConsultaUsuarios.aspx.designer.cs">
+      <DependentUpon>ConsultaUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AcercaDe.aspx.cs">
+      <DependentUpon>AcercaDe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AcercaDe.aspx.designer.cs">
+      <DependentUpon>AcercaDe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Alertas\ProbarAlertas.aspx.cs">
+      <DependentUpon>ProbarAlertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Alertas\ProbarAlertas.aspx.designer.cs">
+      <DependentUpon>ProbarAlertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmEspecialidad\Especialidades.aspx.cs">
+      <DependentUpon>Especialidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmEspecialidad\Especialidades.aspx.designer.cs">
+      <DependentUpon>Especialidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\DTOs\dtoMedicamento.cs" />
+    <Compile Include="Presentacion\Informes\ReporteMovim.aspx.cs">
+      <DependentUpon>ReporteMovim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteMovim.aspx.designer.cs">
+      <DependentUpon>ReporteMovim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteMovimientos.aspx.cs">
+      <DependentUpon>ReporteMovimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteMovimientos.aspx.designer.cs">
+      <DependentUpon>ReporteMovimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteEspecialidad.aspx.cs">
+      <DependentUpon>ReporteEspecialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteEspecialidad.aspx.designer.cs">
+      <DependentUpon>ReporteEspecialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteMedicamento.aspx.cs">
+      <DependentUpon>ReporteMedicamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteMedicamento.aspx.designer.cs">
+      <DependentUpon>ReporteMedicamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteUsuarios.aspx.cs">
+      <DependentUpon>ReporteUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteUsuarios.aspx.designer.cs">
+      <DependentUpon>ReporteUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteVencimientos.aspx.cs">
+      <DependentUpon>ReporteVencimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Informes\ReporteVencimientos.aspx.designer.cs">
+      <DependentUpon>ReporteVencimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\RegistroUsuario.aspx.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\RegistroUsuario.aspx.designer.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\AbmUsuario\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\ABMLotes.aspx.cs">
+      <DependentUpon>ABMLotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\ABMLotes.aspx.designer.cs">
+      <DependentUpon>ABMLotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\ABMTipoMovimiento.aspx.cs">
+      <DependentUpon>ABMTipoMovimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\ABMTipoMovimiento.aspx.designer.cs">
+      <DependentUpon>ABMTipoMovimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\Vencimientos.aspx.cs">
+      <DependentUpon>Vencimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\Vencimientos.aspx.designer.cs">
+      <DependentUpon>Vencimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\ConsultarMovimientos.aspx.cs">
+      <DependentUpon>ConsultarMovimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\ConsultarMovimientos.aspx.designer.cs">
+      <DependentUpon>ConsultarMovimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\PedidoStk.aspx.cs">
+      <DependentUpon>PedidoStk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\PedidoStk.aspx.designer.cs">
+      <DependentUpon>PedidoStk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\Salidas.aspx.cs">
+      <DependentUpon>Salidas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\Salidas.aspx.designer.cs">
+      <DependentUpon>Salidas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\Entradas.aspx.cs">
+      <DependentUpon>Entradas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Movimientos\Entradas.aspx.designer.cs">
+      <DependentUpon>Entradas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\ParametrosSistema\ConfigurarStockM.aspx.cs">
+      <DependentUpon>ConfigurarStockM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ParametrosSistema\ConfigurarStockM.aspx.designer.cs">
+      <DependentUpon>ConfigurarStockM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="css\" />
+    <Folder Include="Imagenes\App_LocalResources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Presentacion\Informes\Report2.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteUsuarios.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteMovimientos.rdlc" />
+    <None Include="App_Code\DSMovimientos.xsc">
+      <DependentUpon>DSMovimientos.xsd</DependentUpon>
+    </None>
+    <Resource Include="App_Code\DSMovimientos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMovimientos.Designer.cs</LastGenOutput>
+    </Resource>
+    <None Include="App_Code\DSMovimientos.xss">
+      <DependentUpon>DSMovimientos.xsd</DependentUpon>
+    </None>
+    <None Include="CentroSaludDatos.dbml.layout">
+      <DependentUpon>CentroSaludDatos.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\ReporteEspecialidad.rdlc" />
+    <Content Include="Imagenes\Login\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Site2.Master" />
+    <None Include="centro_saludDataSet.xsc">
+      <DependentUpon>centro_saludDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="centro_saludDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>centro_saludDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="centro_saludDataSet.xss">
+      <DependentUpon>centro_saludDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="centro_saludDataSet1.xsc">
+      <DependentUpon>centro_saludDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="centro_saludDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>centro_saludDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="centro_saludDataSet1.xss">
+      <DependentUpon>centro_saludDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMovimientos.xsc">
+      <DependentUpon>DataSetMovimientos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMovimientos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMovimientos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetMovimientos.xss">
+      <DependentUpon>DataSetMovimientos.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CentroSaludDatos.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CentroSaludDatos.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51238</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

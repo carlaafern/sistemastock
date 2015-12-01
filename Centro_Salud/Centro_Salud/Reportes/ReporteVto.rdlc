@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="dsNuevo">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>1877f7aa-c93d-42f7-a760-1db0a080818f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsNuevo">
+      <Fields>
+        <Field Name="stockActual">
+          <DataField>stockActual</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="codigoStock">
+          <DataField>codigoStock</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="codigoMedicamento">
+          <DataField>codigoMedicamento</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="lote">
+          <DataField>lote</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="fechaBaja">
+          <DataField>fechaBaja</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dsNuevo</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsNuevo</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\CarlaFern\Documents\Sistema Ale\Centro_Salud\Centro_Salud\dsNuevo.xsd</rd:SchemaPath>
+        <rd:TableName>StockMedicamento</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>StockMedicamentoTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsMedicamento">
+      <Fields>
+        <Field Name="codigo">
+          <DataField>codigo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="descripcion">
+          <DataField>descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="monoDroga">
+          <DataField>monoDroga</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="descripcionAmpliada">
+          <DataField>descripcionAmpliada</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="formato">
+          <DataField>formato</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="unidadMedida">
+          <DataField>unidadMedida</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="fechaBaja">
+          <DataField>fechaBaja</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="stockMinimo">
+          <DataField>stockMinimo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="stockAlerta">
+          <DataField>stockAlerta</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="stockInicioMes">
+          <DataField>stockInicioMes</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="stockMaximo">
+          <DataField>stockMaximo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="diasAlertas">
+          <DataField>diasAlertas</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dsNuevo</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsNuevo</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\CarlaFern\Documents\Sistema Ale\Centro_Salud\Centro_Salud\dsNuevo.xsd</rd:SchemaPath>
+        <rd:TableName>Medicamento</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>MedicamentoTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsStock">
+      <Fields>
+        <Field Name="stockActual">
+          <DataField>stockActual</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="codigoStock">
+          <DataField>codigoStock</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="codigoMedicamento">
+          <DataField>codigoMedicamento</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="lote">
+          <DataField>lote</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="fechaBaja">
+          <DataField>fechaBaja</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dsNuevo</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsStock</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\CarlaFern\Documents\Sistema Ale\Centro_Salud\Centro_Salud\dsStock.xsd</rd:SchemaPath>
+        <rd:TableName>StockMedicamento</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>StockMedicamentoTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>1.33842in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.33842in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.33842in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.33842in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.23622in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox13">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Codigo</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox7">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Nro Lote</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Vencimiento</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Cantidad</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.23622in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="codigoMedicamento">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!codigoMedicamento.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>codigoMedicamento</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="lote">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!lote.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>lote</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="fechaBaja">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!fechaBaja.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>fechaBaja</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="stockActual">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!stockActual.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>stockActual</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>dsNuevo</DataSetName>
+        <Top>1.20862cm</Top>
+        <Left>1.31445cm</Left>
+        <Height>1.2cm</Height>
+        <Width>13.59831cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Image Name="Icono">
+        <Source>Embedded</Source>
+        <Value>loguito</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>2.38938cm</Top>
+        <Left>11.35469cm</Left>
+        <Height>2.69062cm</Height>
+        <Width>2.95521cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Centro Salud-Reporte de Vencimientos</Value>
+                <Style>
+                  <FontFamily>Cambria</FontFamily>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Color>DodgerBlue</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox9</rd:DefaultName>
+        <Top>0.37049cm</Top>
+        <Left>2.93872cm</Left>
+        <Height>0.83813cm</Height>
+        <Width>10.63256cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>2in</Height>
+    <Style />
+  </Body>
+  <Width>6.85542in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="loguito">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportID>38099ba1-054f-45a6-b859-6a8c5fdd5957</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

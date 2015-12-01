@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21, 20.375" name="CentroSaludDatos">
+  <DataContextMoniker Name="/CentroSaludDatosDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1fc99490-8852-4c2d-9a5a-e79ad716ca29" absoluteBounds="9.75, 7.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Baja" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23b9f80e-6538-41e4-adb1-857fbf5a1ee7" absoluteBounds="9.765, 7.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="901fd36c-bffc-43fa-b662-bf7c7bb11391" absoluteBounds="6.75, 10.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Complejidad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a19169f-7453-4d77-b318-ab033ae6a586" absoluteBounds="6.765, 10.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05084638-3361-4088-9e49-f6010f29f9a2" absoluteBounds="9.75, 9.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Comprobante" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a220caa7-5679-4d73-bfeb-6c89b2c6b90f" absoluteBounds="9.765, 9.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0411c8a9-d9aa-4dc2-b8fb-752f832758b1" absoluteBounds="6.75, 12.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Departamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f194b6a-22d6-4f47-a69c-0d3a339a8394" absoluteBounds="6.765, 12.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1339cd3f-9041-46cd-998e-956a551e532d" absoluteBounds="9.75, 12.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/DetalleComprobante" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4687f2b2-3307-4d08-9b74-ecb3207db443" absoluteBounds="9.765, 12.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="363c0d74-a0a2-420f-842a-d37d092ccb34" absoluteBounds="12.75, 1.5, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/DetalleDonacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0587bf0f-1ecc-4bc7-adfd-1e977ecd9856" absoluteBounds="12.765, 1.96, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c5c57547-7993-4808-84ed-8715e8e13455" absoluteBounds="12.5, 4.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/DetalleMovimientoStock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c090c24-2f40-42a7-9645-85e17390900f" absoluteBounds="12.515, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30c797b6-861c-4fda-8494-338d65ccf457" absoluteBounds="3.5, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/DetallePedido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49a041c3-c6db-4973-9608-1876fa20772f" absoluteBounds="3.515, 11.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab9d4ae4-c127-405f-892b-09e2d4521158" absoluteBounds="0.75, 13.5, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/DetalleReceta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b6120e3-78ed-46eb-bc92-53296be23f43" absoluteBounds="0.765, 13.96, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e0d84f5-2540-41bc-b4b6-b7db79ca66d4" absoluteBounds="0.75, 6.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Direccion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f251129-02be-4ec6-b650-a0c3a910caac" absoluteBounds="0.765, 6.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2efea32e-a8f9-4838-8290-ccbd32f46cf6" absoluteBounds="12.75, 7.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Donacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c9a6fa1d-5f88-45b2-82ea-364397d78ee1" absoluteBounds="12.765, 7.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66d5d5c2-b53e-4276-ba89-e349903ffab0" absoluteBounds="12.75, 10.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/DtoEntrada" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c19f5062-b8d5-4274-a64f-01bd61bd49a5" absoluteBounds="12.765, 10.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3810adc8-329e-439b-ae24-9202dce82e23" absoluteBounds="12.75, 13.5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Enfermedad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c623150-d8d7-46c3-943c-ddc908b4fcdd" absoluteBounds="12.765, 13.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38dba35c-9bb0-4aa9-a1c4-6f17bd875001" absoluteBounds="0.75, 15.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Entrada" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a683c821-90e3-48b0-bd0c-dc2fcb9482f2" absoluteBounds="0.765, 15.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="da22e602-17fb-4b2d-903a-36a4bbc464c4" absoluteBounds="3.75, 15.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Especialidad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9567479b-264d-48bf-b931-0cb9923a2345" absoluteBounds="3.765, 15.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6aebe6e8-a087-407a-85cd-e7c274c29401" absoluteBounds="0.75, 2.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Formato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e5ef262-424e-4b61-af06-774490201a71" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa7a09e4-d5df-4b32-9a09-0a7f4237d6bd" absoluteBounds="6.75, 15.5, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Localidad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa516696-70eb-4f3f-a626-b133f054213e" absoluteBounds="6.765, 15.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21a8602d-a106-4ada-aeca-bb5f33786510" absoluteBounds="6.75, 1.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Lote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6c9cc42-b706-4b54-bf15-bc41138c315a" absoluteBounds="6.765, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f8c76fb9-3865-43c8-b4d9-5fb886f58370" absoluteBounds="15.75, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/MapaSistema" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32a8d82a-a3b4-46ca-a6ab-ef13fe3ab804" absoluteBounds="15.765, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0247aa74-47e2-4611-96ba-708c8791cca8" absoluteBounds="3.5, 1.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Medicamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e33d25ab-f443-4639-b2dc-c87ebb359b4c" absoluteBounds="3.515, 2.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c874cbf4-0e24-4487-9d9e-55ebbbaecf15" absoluteBounds="15.75, 4.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Medico" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f28359f-cbef-4ebe-b614-4298f4503323" absoluteBounds="15.765, 4.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="37414067-aca2-4f78-a061-b2a2069875a2" absoluteBounds="9.75, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/MovimientoStock" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcb2a192-e1b4-44a0-a35e-31a8a39083c4" absoluteBounds="9.765, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="299cb7b6-6282-4429-aa98-c9aaf3569559" absoluteBounds="15.75, 7.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Paciente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14704c54-9e98-4355-b1b2-5b32710c3579" absoluteBounds="15.765, 7.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dfa9e139-ea5b-461f-8798-5d5c028075cf" absoluteBounds="0.75, 10.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Pedido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48d2f917-6ca8-44c7-bc97-a94abec097b6" absoluteBounds="0.765, 11.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b67df12-b16b-4ecc-83fe-1162ae1f3140" absoluteBounds="3.75, 7.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Perfil" />
+      <nestedChildShapes>
+        <elementListCompartment Id="06463272-c053-413b-96b1-9b1a6a9bf5c6" absoluteBounds="3.765, 7.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="65997d52-03c7-4e92-8723-af25a9596c21" absoluteBounds="15.75, 10.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/PerfilPrivilegio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="120deb2a-9e63-44f0-96ad-e9ffb32b339c" absoluteBounds="15.765, 10.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d872d84-b85b-4643-b6ed-21b62e81119d" absoluteBounds="15.75, 12.5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Persona" />
+      <nestedChildShapes>
+        <elementListCompartment Id="566c0aca-3895-4a8e-902d-ea193c5b72a0" absoluteBounds="15.765, 12.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a85ffffd-801e-451c-9757-49eaeec845de" absoluteBounds="15.75, 16.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Privilegio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1dc1642-d201-4835-ae27-01013404eb9d" absoluteBounds="15.765, 16.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0eb2c556-41df-4ad2-a2a0-8a430420fad1" absoluteBounds="9.75, 17.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Provincia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76fa40b3-1cad-4f9d-aad1-af904a8a526b" absoluteBounds="9.765, 17.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="083e9f79-4998-4a9f-aa6c-bdc5e9a7049c" absoluteBounds="0.75, 18.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Receta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7e668f8-3bc6-46b7-8a56-60a9c8de2290" absoluteBounds="0.765, 18.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85e1acd6-9023-423f-ac27-5cb5e2844837" absoluteBounds="3.75, 18.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Salida" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7cf5644-4c90-4200-a8c9-cc2bdb6099b2" absoluteBounds="3.765, 18.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="009e84c2-3ebf-4dfa-9bbe-bd8f7a737897" absoluteBounds="12.75, 18.5, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/TipoComprobante" />
+      <nestedChildShapes>
+        <elementListCompartment Id="85747df4-1881-4e27-a021-663e1ed5ffb0" absoluteBounds="12.765, 18.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2dc42c5-c6b4-47a9-9fd2-e66ebb824bc2" absoluteBounds="15.75, 18.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/TipoMedicamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f414387e-45cf-45cd-847b-04e9f95c45c9" absoluteBounds="15.765, 18.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6e85929f-0ee6-4403-8128-3ab66e4fc904" absoluteBounds="18.75, 1.5, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/TipoMovimiento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c631d3b1-d502-4d9b-a73d-d014f3d38e6b" absoluteBounds="18.765, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3fa370ea-b7cc-4539-8edf-cf57980aebd6" absoluteBounds="18.75, 4.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/TipoPersona" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a447d16-e59a-49a6-bfac-279d3f5ee8fb" absoluteBounds="18.765, 4.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3c3f1c1-9fbc-44b4-acd9-290cbce66ae7" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/UnidadMedida" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ce674a2-88fa-4c19-b83b-66d20703a7e3" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21f0ab1a-2daa-469f-919a-f076c6c33c9c" absoluteBounds="6.5, 6.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c467fbbf-1695-4853-905c-5650dbc9f71b" absoluteBounds="6.515, 7.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.45863627929688 : 8.4631982421875); (1.45863627929688 : 8.7131982421875); (2.05523818359375 : 8.7131982421875); (2.05523818359375 : 8.4631982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CentroSaludDatosDataContext/Direccion/Direccion_Direccion" />
+      <nodes>
+        <classShapeMoniker Id="1e0d84f5-2540-41bc-b4b6-b7db79ca66d4" />
+        <classShapeMoniker Id="1e0d84f5-2540-41bc-b4b6-b7db79ca66d4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.34699625651042); (3.5 : 3.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CentroSaludDatosDataContext/Formato/Formato_Medicamento" />
+      <nodes>
+        <classShapeMoniker Id="6aebe6e8-a087-407a-85cd-e7c274c29401" />
+        <classShapeMoniker Id="0247aa74-47e2-4611-96ba-708c8791cca8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.75 : 5.66429768880208); (12.5 : 5.66429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CentroSaludDatosDataContext/MovimientoStock/MovimientoStock_DetalleMovimientoStock" />
+      <nodes>
+        <classShapeMoniker Id="37414067-aca2-4f78-a061-b2a2069875a2" />
+        <classShapeMoniker Id="c5c57547-7993-4808-84ed-8715e8e13455" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.4431469726562); (3.5 : 11.4431469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CentroSaludDatosDataContext/Pedido/Pedido_DetallePedido" />
+      <nodes>
+        <classShapeMoniker Id="dfa9e139-ea5b-461f-8798-5d5c028075cf" />
+        <classShapeMoniker Id="30c797b6-861c-4fda-8494-338d65ccf457" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.2499995); (4.5 : 1.2499995); (4.5 : 1.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CentroSaludDatosDataContext/UnidadMedida/UnidadMedida_Medicamento" />
+      <nodes>
+        <classShapeMoniker Id="e3c3f1c1-9fbc-44b4-acd9-290cbce66ae7" />
+        <classShapeMoniker Id="0247aa74-47e2-4611-96ba-708c8791cca8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 7.97199625651042); (6.5 : 7.97199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CentroSaludDatosDataContext/Perfil/Perfil_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="0b67df12-b16b-4ecc-83fe-1162ae1f3140" />
+        <classShapeMoniker Id="21f0ab1a-2daa-469f-919a-f076c6c33c9c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="8c2b70aa-09b8-468d-b5c6-1d2cdaaef9b3" absoluteBounds="10, 2, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/CentroSaludDatosDataContext/StockMedicamento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc1a7091-694b-453c-ada0-dd0d603ca69b" absoluteBounds="10.015, 2.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 2.56814697265625); (10 : 2.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CentroSaludDatosDataContext/Lote/Lote_StockMedicamento" />
+      <nodes>
+        <classShapeMoniker Id="21a8602d-a106-4ada-aeca-bb5f33786510" />
+        <classShapeMoniker Id="8c2b70aa-09b8-468d-b5c6-1d2cdaaef9b3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

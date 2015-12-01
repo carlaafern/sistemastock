@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="centro_salud" Class="CentroSaludDatosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=ALE-PC\SQLEXPRESS;Initial Catalog=centro_salud;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="centro_saludConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Baja" Member="Bajas">
+    <Type Name="Baja">
+      <Column Name="motivoBaja" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nroMovimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Complejidad" Member="Complejidads">
+    <Type Name="Complejidad">
+      <Column Name="codComplejidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="valor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comprobante" Member="Comprobantes">
+    <Type Name="Comprobante">
+      <Column Name="estado" Type="System.Data.Linq.Binary" DbType="Binary(10)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="fechaComprobante" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nroComprobante" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Departamento" Member="Departamentos">
+    <Type Name="Departamento">
+      <Column Name="codigoDepartamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nombreDepartamento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="codigoProvincia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DetalleComprobante" Member="DetalleComprobantes">
+    <Type Name="DetalleComprobante">
+      <Column Name="cantidadEntregada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cantidadSolicitada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DetalleDonacion" Member="DetalleDonacions">
+    <Type Name="DetalleDonacion">
+      <Column Name="comentario" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DetalleMovimientoStock" Member="DetalleMovimientoStocks">
+    <Type Name="DetalleMovimientoStock">
+      <Column Name="nroMovimiento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codigoMedicamento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nroLote" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="codDetalle" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="MovimientoStock_DetalleMovimientoStock" Member="MovimientoStock" ThisKey="nroMovimiento" OtherKey="nroMovimiento" Type="MovimientoStock" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DetallePedido" Member="DetallePedidos">
+    <Type Name="DetallePedido">
+      <Column Name="nroPedido" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nroDetallePedido" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="codigoMedicamento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pedido_DetallePedido" Member="Pedido" ThisKey="nroPedido" OtherKey="nroPedido" Type="Pedido" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DetalleReceta" Member="DetalleRecetas">
+    <Type Name="DetalleReceta">
+      <Column Name="cant" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Direccion" Member="Direccions">
+    <Type Name="Direccion">
+      <Column Name="codigoDireccion" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="calle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="nroCalle" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="codigoProvincia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codigoDepartamento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="codigoLocalidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Direccion_Direccion" Member="Direccion2" ThisKey="codigoDireccion" OtherKey="codigoDireccion" Type="Direccion" Cardinality="One" />
+      <Association Name="Direccion_Direccion" Member="Direccion1" ThisKey="codigoDireccion" OtherKey="codigoDireccion" Type="Direccion" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Donacion" Member="Donacions">
+    <Type Name="Donacion">
+      <Column Name="efectorDestino" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="efectorOrigen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nroMovimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DtoEntrada" Member="DtoEntradas">
+    <Type Name="DtoEntrada">
+      <Column Name="item" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="codigoMedicamenteo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Enfermedad" Member="Enfermedads">
+    <Type Name="Enfermedad">
+      <Column Name="codigoEnfermedad" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="descripcionEnfermedad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="diasReposo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gravedad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="requiereInternacion" Type="System.Data.Linq.Binary" DbType="Binary(10)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tratamiento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fechaBaja" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Entrada" Member="Entradas">
+    <Type Name="Entrada">
+      <Column Name="nroRemito" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nroMovimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Especialidad" Member="Especialidads">
+    <Type Name="Especialidad">
+      <Column Name="añosEspecialidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="codigoEspecialidad" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="complejidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="descripcionEspecialidad" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fechaBaja" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Formato" Member="Formatos">
+    <Type Name="Formato">
+      <Column Name="codigoPresentacion" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcionPresentacion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Formato_Medicamento" Member="Medicamentos" ThisKey="codigoPresentacion" OtherKey="formato" Type="Medicamento" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Localidad" Member="Localidads">
+    <Type Name="Localidad">
+      <Column Name="nombreLocalidad" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="codigoLocalidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codigoDepartamento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lote" Member="Lotes">
+    <Type Name="Lote">
+      <Column Name="fechaElaboracion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fechaVto" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nroLote" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Lote_StockMedicamento" Member="StockMedicamentos" ThisKey="nroLote" OtherKey="lote" Type="StockMedicamento" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MapaSistema" Member="MapaSistemas">
+    <Type Name="MapaSistema">
+      <Column Name="codigomapa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="modulo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="opcion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Medicamento" Member="Medicamentos">
+    <Type Name="Medicamento">
+      <Column Name="codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="monoDroga" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="descripcionAmpliada" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="formato" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="unidadMedida" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fechaBaja" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="stockMinimo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stockAlerta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stockInicioMes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stockMaximo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="diasAlertas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Formato_Medicamento" Member="Formato1" ThisKey="formato" OtherKey="codigoPresentacion" Type="Formato" IsForeignKey="true" />
+      <Association Name="UnidadMedida_Medicamento" Member="UnidadMedida1" ThisKey="unidadMedida" OtherKey="codigoUnidadMed" Type="UnidadMedida" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Medico" Member="Medicos">
+    <Type Name="Medico">
+      <Column Name="legajo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="matricula" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dni" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fechaIngreso" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="apellido" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="telefono" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MovimientoStock" Member="MovimientoStocks">
+    <Type Name="MovimientoStock">
+      <Column Name="fechaMovimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nroMovimiento" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tipoMovimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nroComprobante" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MovimientoStock_DetalleMovimientoStock" Member="DetalleMovimientoStocks" ThisKey="nroMovimiento" OtherKey="nroMovimiento" Type="DetalleMovimientoStock" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Paciente" Member="Pacientes">
+    <Type Name="Paciente">
+      <Column Name="dni" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="domicilio" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fechaNacimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nombrePaciente" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="telefono" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tipoDocumento" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nroPaciente" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pedido" Member="Pedidos">
+    <Type Name="Pedido">
+      <Column Name="nroPedido" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fechaPedido" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="proveedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pedido_DetallePedido" Member="DetallePedidos" ThisKey="nroPedido" OtherKey="nroPedido" Type="DetallePedido" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Perfil" Member="Perfils">
+    <Type Name="Perfil">
+      <Column Name="codigoPerfil" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Perfil_Usuario" Member="Usuarios" ThisKey="codigoPerfil" OtherKey="perfil" Type="Usuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PerfilPrivilegio" Member="PerfilPrivilegios">
+    <Type Name="PerfilPrivilegio">
+      <Column Name="fechaDesde" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fechaHasta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Persona" Member="Personas">
+    <Type Name="Persona">
+      <Column Name="nombre" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellido" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dni" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="telefono" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tipoDocumento" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="codigoPersona" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="esActiva" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="codigoDireccion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Privilegio" Member="Privilegios">
+    <Type Name="Privilegio">
+      <Column Name="codigoPrivilegio" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Provincia" Member="Provincias">
+    <Type Name="Provincia">
+      <Column Name="nombreProvincia" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="codigoProvincia" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Receta" Member="Recetas">
+    <Type Name="Receta">
+      <Column Name="fechaEntrega" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fechaVigencia" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Salida" Member="Salidas">
+    <Type Name="Salida">
+      <Column Name="nroReceta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nroMovimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoComprobante" Member="TipoComprobantes">
+    <Type Name="TipoComprobante">
+      <Column Name="codigoTipoComp" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcionTipoComp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoMedicamento" Member="TipoMedicamentos">
+    <Type Name="TipoMedicamento">
+      <Column Name="codigoTipoMedicamento" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcionTipoMedicam" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="presentacion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="unidadMedida" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoMovimiento" Member="TipoMovimientos">
+    <Type Name="TipoMovimiento">
+      <Column Name="codigoTipoMov" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcionTipoMov" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tipo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TipoPersona" Member="TipoPersonas">
+    <Type Name="TipoPersona">
+      <Column Name="codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tipo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UnidadMedida" Member="UnidadMedidas">
+    <Type Name="UnidadMedida">
+      <Column Name="codigoUnidadMed" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcionUnidadMed" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="UnidadMedida_Medicamento" Member="Medicamentos" ThisKey="codigoUnidadMed" OtherKey="unidadMedida" Type="Medicamento" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="contraseña" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="codigoUsuario" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fechaVigencia" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="login" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="codigoPersona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="perfil" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="mail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="recibeAlertas" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Perfil_Usuario" Member="Perfil1" ThisKey="perfil" OtherKey="codigoPerfil" Type="Perfil" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StockMedicamento" Member="StockMedicamentos">
+    <Type Name="StockMedicamento">
+      <Column Name="stockActual" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="codigoStock" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="codigoMedicamento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lote" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fechaBaja" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Lote_StockMedicamento" Member="Lote1" ThisKey="lote" OtherKey="nroLote" Type="Lote" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
