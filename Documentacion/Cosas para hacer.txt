@@ -27,3 +27,8 @@ Modificar el diagrama de clases, agregar persona, ver como lo hicimos en proyect
 -Ver y reemplantear todo el diseño de los movimientos (A)
 
 -nuevo
+
+
+30/11/2015
+-Revisar el inicio
+-Revisar el envío de emails
