@@ -1,0 +1,29 @@
+
+-Armar una maqueta de cuál es el menú definitivo, para después no tener que estar modificando, si no solo agregando cosas  (ALE)
+
+En el login:
+-La palabra login debe reemplazarse por el nombre de usuario
+-Agregar el logout, haciendo clic en el nombre, que aparezca la opción de salir. --> ESTO YA ESTÁ
+
+Inicio: 
+-Buscar logo del sistema para mostrar en esta pantalla
+
+
+-Dar un formato a los botones
+-Dar formato a los mensajes
+
+MODIFICACIONES BD:
+-Eliminar el campo Años de tabla especialidad, no borrar, son los años que dura la especialidad, es humo…
+-Agregar un campo activo en especialidad, para hacer el delete
+
+REPORTES:
+-La idea es crear un proyecto nuevo para esto, y unirlo a esta misma solución
+
+Personas:
+Modificar el diagrama de clases, agregar persona, ver como lo hicimos en proyecto.
+
+-ABM Enfermedades (A) 
+
+-Ver y reemplantear todo el diseño de los movimientos (A)
+
+-nuevo
