@@ -4,6 +4,7 @@ select * from Perfil
 select * from Direccion
 select * from Provincia
 select * from Departamento
+select * from Lote
 select * from Localidad
 insert into Perfil values(1, 'administrador');
 insert into Perfil values(2, 'usuario');
